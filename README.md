@@ -105,3 +105,7 @@ DELETE FROM 表名 WHERE 列名=值
 ```sql
 DELETE FROM student_tb where score<=70.0;
 ```
+
+#### 销毁表
+
+DROP TABLE IF EXISTS student_tb;
