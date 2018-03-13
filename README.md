@@ -107,5 +107,6 @@ DELETE FROM student_tb where score<=70.0;
 ```
 
 #### 销毁表
-
+```sql
 DROP TABLE IF EXISTS student_tb;
+```
