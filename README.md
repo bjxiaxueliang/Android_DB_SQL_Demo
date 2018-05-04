@@ -110,3 +110,14 @@ DELETE FROM student_tb where score<=70.0;
 ```sql
 DROP TABLE IF EXISTS student_tb;
 ```
+
+#### 表中添加、修改或删除列
+
+#### 添加Birthday字段
+```sql
+ALTER TABLE student_tb ADD Birthday INTEGER
+```
+#### 删除Birthday字段
+```sql
+ALTER TABLE student_tb DROP COLUMN Birthday
+```
