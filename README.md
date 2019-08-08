@@ -84,6 +84,9 @@ SELECT 列名称 FROM 表名称 WHERE 列 运算符 值 ORDER BY 列名称 DESC
 SELECT * from student_tb ORDER BY sid DESC;
 //
 SELECT name,sid,age,gender,score from student_tb where score>=80.0 and age<=10 ORDER BY sid DESC;
+//
+SELECT "__time", "deviceId" ,"productId", "systemType" , "system" , "version"  , "dns" , "videoUrl" , "network" , "failType" ,  "failReason" FROM "record_fail"
+WHERE "__time" >= CURRENT_TIMESTAMP - INTERVAL '7' DAY AND "productId" = '3' AND "systemType" = '0' AND "videoUrl" = 'http://demo/HD/movie_index.m3u8' ;
 ```
 
 ### 更新数据
